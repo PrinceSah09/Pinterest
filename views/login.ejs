@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../stylesheets/login.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo"
+        class="img1" />
+      <p class="header">Create account to see more</p>
+      <p class="error-text"> <%=error %></p>
+      <form action="/login"  method="post"> 
+        <input type="text" name="username" placeholder="username" class="detail" /> 
+        <input type="password" name="password" placeholder="password" class="detail" /><br />
+        <input type="submit" class="btn int" value="Login Account">
+      </form>
+      <a href="/">Forgot your password?</a>
+ 
+      <footer>
+        <p>
+          By continuing, you agree to Pinterest's
+          <b>Terms of Service, Privacy policy.</b>
+        </p>
+        <hr />
+        <a href="/">Not on Pinterest yet? Sign up</a>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>

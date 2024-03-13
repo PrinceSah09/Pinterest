@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    zoom: 95%;
+}
+
+
+.container {
+    background-color: rgb(254, 246, 246);
+    width: 520px;
+    min-height: 400px;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    padding-bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px; 
+    box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+}
+
+
+.content {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.img1 {
+    width: 70px;
+    position: relative;
+    top: 20px;
+}
+
+.header {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 46px;
+}
+
+.detail {
+    width: 100%;
+    height: 48px;
+    margin: 5px;
+    padding: 15px;
+    font-size: 15px;
+    color: gray;
+    border: 2px solid rgb(218, 214, 214);
+    border-radius: 15px;
+}
+
+.detail:focus {
+    box-shadow: 0px -7px 3px -2px rgba(15, 91, 231, 0.4),
+        0px 7px 3px -2px rgba(15, 91, 231, 0.4),
+        7px 0px 3px -2px rgba(15, 91, 231, 0.4),
+        -7px 0px 3px -2px rgba(15, 91, 231, 0.4);
+    outline: none;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    left: -60px;
+    margin: 5px;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    border: hidden;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.int {
+    background-color: #f30d19;
+    margin: 10px 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.int:hover {
+    background-color: #df0812;
+}
+
+.or {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.fbk {
+    background-color: rgb(9, 128, 240);
+    margin: 5px 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.fbk a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.fbk:hover {
+    background-color: rgb(8, 110, 206);
+}
+
+.ggl {
+    text-align: center;
+    background-color: #ccc;
+}
+
+.ggl a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.ggl:hover {
+    background-color: #a0a0a0;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+p:last-child {
+    opacity: 1;
+}
+
+hr {
+    width: 50%;
+    opacity: 0.4;
+    margin-left: 25%;
+}
+
+.upbtn {
+    position: relative;
+    top: 50px;
+    left: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    width: 126px;
+    padding: 11px 0px;
+    background-color: rgb(241, 236, 236);
+    border-radius: 20px;
+}
+
+
+.error-text{
+    color: red;
+}

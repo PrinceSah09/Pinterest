@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../stylesheets/profile.css">
+  <link rel="stylesheet" href="../stylesheets/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card1">
+      <div class="profile-picture">
+        <img
+          src="https://imgs.search.brave.com/46hxzkJj9jex6_wcDvopoaQGHXnMqNm6eKpRdx50B4s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jdXRl/ZHAuaW4vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjIvMTAvZHBf/aW1hZ2UxMC0xMDY3/LmpwZw">
+      </div>
+      <h3 class="username">
+        <%= user.username %>
+      </h3>
+      <h2 class="fullname">
+        <%= user.fullname%>
+      </h2>
+      <p class="email">
+        <%= user.email %>
+      </p>
+      <p class="bio">This is my bio for the pinterest.</p>
+      <a href="/logout" class="button">Logout</a>
+
+      <div class="uploadingField">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <input class="btn" type="text" name="imageText" placeholder="Caption of image....">
+          <input class="btn" type="file" name="file">
+          <input class="btn upload" type="submit" value="upload">
+        </form>
+      </div>
+    </div>
+
+
+    <div class="main">
+      <% user.posts.forEach(function(post){ %>
+        <div class="cardBox"> 
+          <img src="/images/uploads/<%= post.image %>" alt="img">
+          <div class="caption">
+            <%= post.imageText%>
+          </div> 
+        </div>
+        <% }) %>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

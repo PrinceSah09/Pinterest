@@ -7,14 +7,19 @@ const expressSession = require("express-session");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const passport = require("passport");
-
+const User = require("./routes/users");
+const flash = require("connect-flash")
+ 
 var app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-//Setting sessions and passports
+// For displaying the error messsage as flash
+app.use(flash()); 
+
+// Setting sessions and passports
 app.use(
   expressSession({
     resave: false,
@@ -24,16 +29,19 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
-passport.serializeUser((user, done) => {
-  done(null, user.id);
+passport.serializeUser((User, done) => {
+  done(null, User.id);
 });
 
 passport.deserializeUser((id, done) => {
-  User.findById(id, (err, user) => {
-    done(err, user);
-  });
+  User.findById(id)
+    .then(user => {
+      done(null, user);
+    })
+    .catch(err => {
+      done(err, null);
+    });
 });
-
 
 
 app.use(logger("dev"));
