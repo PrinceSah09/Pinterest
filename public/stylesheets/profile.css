@@ -69,7 +69,6 @@ body {
     margin: 10px auto; 
     display: flex; 
     text-align: center;
-    justify-content: center;
     align-items: center; 
     width: fit-content;
     border-radius: 10px;
