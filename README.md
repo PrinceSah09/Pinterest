@@ -2,6 +2,10 @@
 
 This Pinterest clone web application is built using Express, Passport for authentication, EJS templates for dynamic rendering, Multer for handling file uploads, and Node.js. Users can view a feed of images and upload their own images along with captions.
 
+
+<img src="feed.png" width="900px">
+
+
 ## Features
 
 - **Feed Viewing:** Users can browse through a feed of images uploaded by other users.
@@ -9,6 +13,8 @@ This Pinterest clone web application is built using Express, Passport for authen
 
 This Pinterest clone web application is built using Express, Passport for authentication, EJS templates for dynamic rendering, Multer for handling file uploads, and Node.js. Users can view a feed of images and upload their own images along with captions.
 
+
+<img src="profile.png" width="900px">
 ## Features ✨
 
 - **Feed Viewing:** Users can browse through a feed of images uploaded by other users.
