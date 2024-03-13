@@ -33,8 +33,7 @@ header {
     width: 1400px;
     margin: auto;
     columns: 6;
-    column-gap: 20px;
-
+    column-gap: 20px; 
 }
 
 .container .box {
