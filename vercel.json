@@ -1,5 +1,5 @@
 { 
     "version": 2,
-    "rewrites": [{ "src": "./index.js", "use":"@vercel/node" }],
-    "routes" : [{"src" : "/(.*)", "dest": "/" }]
+    "rewrites": [{ "source": "./index.js", "use":"@vercel/node" }],
+    "routes" : [{"source" : "/(.*)", "dest": "/" }]
 }
